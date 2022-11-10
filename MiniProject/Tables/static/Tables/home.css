@@ -13,7 +13,7 @@ body {
 
 .nav-item-position:hover {
     font-weight: 700;
-    color: black;
+    color: red;
 }
 
 header {
