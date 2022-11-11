@@ -13,7 +13,6 @@ body {
 
 .nav-item-position:hover {
     font-weight: 700;
-    color: red;
 }
 
 header {
@@ -24,18 +23,16 @@ header {
 
 .navbar-colour {
     color: white;
-    font-size: 21px;
+    font-size: 25px;
 }
 
-/* .bg-light {
-    background-color: #202527 !important;
-} */
 
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .show>.nav-link {
     color: white;
     font-size: 17px;
 }
+
 
 .d-block w-100 {
     height: 400px;
@@ -46,8 +43,6 @@ header {
     width: 60%;
     margin: auto;
     padding: 1rem;
-    background-color: #f2f2f2;
-    height: 500px;
 }
 
 .card {
@@ -79,15 +74,22 @@ header {
     color: white;
 }
 
-@media screen and (max-width: 567px) {
-    .card:not(:first-child) {
+@media screen and (max-width: 1078px) {
+    /* .card:not(:first-child) {
         display: none;
+    } */
+
+    .cards-wrapper{
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .card {
-        width: 100%;
+        width: 60%;
     }
 }
+
+
 
 .carousel-control-prev {
     width: 30%;
@@ -181,3 +183,4 @@ header {
 ul {
     padding-left: 0rem;
 }
+

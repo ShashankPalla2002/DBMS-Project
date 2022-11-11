@@ -78,9 +78,9 @@ WSGI_APPLICATION = 'MiniProject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'CyberSecurity',
+        'NAME': 'Cybersecurity',
         'USER': 'root',
-        'PASSWORD': 'javaminiproject',
+        'PASSWORD': 'Mysql@25',
         'HOST': '127.0.0.1',
         'PORT': '3306'
     }
