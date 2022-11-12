@@ -1,587 +1,431 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="{% static 'Tables/home.css' %}" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <!-- navbar -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="{% static 'Tables/home.css' %}" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
 
-    <nav class="navbar navbar-expand-lg">
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item nav-item-position">
-            <a
-              class="nav-link active text-white"
-              aria-current="page"
-              href="#person_link"
-              >Person</a
-            >
-          </li>
-          <li class="nav-item nav-item-position">
-            <a
-              class="nav-link active text-white"
-              aria-current="page"
-              href="#govt_link"
-              >Government</a
-            >
-          </li>
-          <li class="nav-item nav-item-position">
-            <a
-              class="nav-link active text-white"
-              aria-current="page"
-              href="#prop_link"
-              >Property</a
-            >
-          </li>
-          <li class="nav-item nav-item-position">
-            <a class="nav-link active text-white" aria-current="page" href="#"
-              >IPC Sections</a
-            >
-          </li>
-          <li class="nav-item nav-item-position">
-            <a class="nav-link active text-white" aria-current="page" href="#"
-              >IT Act</a
-            >
-          </li>
-        </ul>
-      </div>
-    </nav>
+<body>
+  <!-- navbar -->
 
-    <!-- <header style="background-image: url('{% static 'Tables/images/homepage.jpeg' %}')"></header> -->
-
-    <!-- person -->
-    <h1 class="heading" id="person_link">Person</h1>
-    <div
-      id="carouselExampleControls"
-      class="carousel slide"
-      data-bs-ride="carousel"
-      data-bs-interval="false"
-    >
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="cards-wrapper">
-            <div class="card">
-              <img
-                src="{% static 'Tables/images/assault.jpg' %}"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Assault By Threat</h5>
-                <p class="card-text">
-                  refers to threatening a person with fear for their lives or
-                  lives of their families through the use of a computer network
-                  i.e. E-mail, videos or phones.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-
-            <div class="card">
-              <img
-                src="{% static 'Tables/images/carding.png' %}"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Carding</h5>
-                <p class="card-text">
-                  There is always unauthorized use of ATM cards in this type of
-                  cyber crimes. It means false ATM cards i.e. Debit and Credit
-                  cards used by criminals for their monetary benefits.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-
-            <div class="card">
-              <img
-                src="{% static 'Tables/images/cheatingfraud.jpg' %}"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Cheating and Fraud</h5>
-                <p class="card-text">
-                  It means the person who is doing the act of cyber crime i.e.
-                  stealing password and data storage has done it with having
-                  guilty mind which leads to fraud and cheating.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="cards-wrapper">
-            <div class="card">
-              <img
-                src="{% static 'Tables/images/childpornography.jpg' %}"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Child Pornography</h5>
-                <p class="card-text">
-                  It involves the use of computer networks to create,
-                  distribute, or access materials that sexually exploit underage
-                  children.
-                </p>
-                <br />
-                <br />
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-
-            <div class="card">
-              <img
-                src="{% static 'Tables/images/cracking.jpg' %}"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Cracking</h5>
-                <p class="card-text">
-                  Cracking means that a stranger has broken into your computer
-                  systems without your knowledge and consent and has tampered
-                  with precious confidential data and information.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-
-            <div class="card">
-              <img
-                src="{% static 'Tables/images/cyberstalking.jpg' %}"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Cyber-Stalking</h5>
-                <p class="card-text">
-                  It means to create physical threat that creates fear to use
-                  the computer technology such as internet, e-mail, phones, text
-                  messages, webcam, websites or videos
-                </p>
-                <br />
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="cards-wrapper">
-            <div class="card">
-              <img
-                src="{% static 'Tables/images/defamation.webp' %}"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Defamation</h5>
-                <p class="card-text">
-                  Defamation is the act of communicating to a third party false
-                  statements about a person, place or thing that results in
-                  damage to its reputation
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-
-            <div class="card">
-              <img
-                src="{% static 'Tables/images/dissemination.jpg' %}"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Dissemination Of Obscene Material</h5>
-                <p class="card-text">
-                  It includes Indecent exposure/ Pornography, hosting of web
-                  site containing these prohibited materials.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-
-            <div class="card">
-              <img
-                src="{% static 'Tables/images/emailspoofing.png' %}"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Email Spoofing</h5>
-                <p class="card-text">
-                  A spoofed e-mail may be said to be one, which misrepresents
-                  its origin. It shows itsorigin to be different from which
-                  actually it originates.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="carousel-item">
-          <div class="cards-wrapper">
-            <div class="card">
-              <img
-                src="{% static 'Tables/images/hacking.jpg' %}"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Hacking</h5>
-                <p class="card-text">
-                  It means unauthorized control/access over computer system and
-                  act of hacking completelydestroys the whole data as well as
-                  computer programmes. Hackers usually hacks telecommunication
-                  and mobile network.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-
-            <div class="card">
-              <img
-                src="{% static 'Tables/images/sms-spoofing.png' %}"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">SMS Spoofing</h5>
-                <p class="card-text">
-                  Spoofing is a blocking through spam which means the unwanted
-                  uninvited messages.Wrongdoer steals mobile phone number of any
-                  person and sending SMS via internet and receiver gets the SMS
-                  from the mobile phone number of the victim.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleControls"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleControls"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+  <nav class="navbar navbar-expand-lg">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item nav-item-position">
+          <a class="nav-link active text-white" aria-current="page" href="#person_link">Person</a>
+        </li>
+        <li class="nav-item nav-item-position">
+          <a class="nav-link active text-white" aria-current="page" href="#govt_link">Government</a>
+        </li>
+        <li class="nav-item nav-item-position">
+          <a class="nav-link active text-white" aria-current="page" href="#prop_link">Property</a>
+        </li>
+        <li class="nav-item nav-item-position">
+          <a class="nav-link active text-white" aria-current="page" href="#">IPC Sections</a>
+        </li>
+        <li class="nav-item nav-item-position">
+          <a class="nav-link active text-white" aria-current="page" href="#">IT Act</a>
+        </li>
+      </ul>
     </div>
+  </nav>
 
-    <!-- property -->
-    <h1 class="heading" id="prop_link">Property</h1>
-    <div
-      id="carouselExampleControls1"
-      class="carousel slide"
-      data-bs-ride="carousel"
-      data-bs-interval="false"
-    >
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="cards-wrapper">
-            <div class="card">
-              <img
-                src="{% static 'Tables/images/Cyber_squatting.jpg' %}"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Cyber Squatting</h5>
-                <p class="card-text">
-                  Cybersquatting is the practice of registering, trafficking in,
-                  or using an Internet domain name, with a bad faith intent to
-                  profit from the goodwill of a trademark belonging to someone
-                  else.
-                </p>
-                <br />
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
+  <!-- <header style="background-image: url('{% static 'Tables/images/homepage.jpeg' %}')"></header> -->
 
-            <div class="card">
-              <img
-                src="{% static 'Tables/images/cybertresspass.jpg' %}"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Cyber Trespass</h5>
-                <p class="card-text">
-                  Cyber Trepass means to access someone's computer or network
-                  without the right authorization of the owner and disturb,
-                  alter, misuse, or damage data or system by using wireless
-                  internet connection.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-
-            <div class="card">
-              <img
-                src="{% static 'Tables/images/cybervandalism.png' %}"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Cyber Vandalism</h5>
-                <p class="card-text">
-                  Destructive cyberattacks without any obvious profit or
-                  ideological motive. Cyber vandals can deface websites, disrupt
-                  a company’s services, or delete databases.
-                </p>
-                <br />
-                <br />
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
+  <!-- person -->
+  <h1 class="heading" id="person_link">Person</h1>
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="cards-wrapper">
+          <div class="card">
+            <img src="{% static 'Tables/images/assault.jpg' %}" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Assault By Threat</h5>
+              <p class="card-text">
+                refers to threatening a person with fear for their lives or
+                lives of their families through the use of a computer network
+                i.e. E-mail, videos or phones.
+              </p>
+              <br>
+              <a href="crime_details/Assault by Threat" class="btn btn-primary">Read More</a>
             </div>
           </div>
-        </div>
 
-        <div class="carousel-item">
-          <div class="cards-wrapper">
-            <div class="card">
-              <img
-                src="{% static 'Tables/images/hackingcomp.jpg' %}"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Hacking Computer System</h5>
-                <p class="card-text">
-                  Hacking is the act of identifying and then exploiting
-                  weaknesses in a computer system or network, usually to gain
-                  unauthorized access to personal or organizational data.
-                </p>
-
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-
-            <div class="card">
-              <img
-                src="{% static 'Tables/images/internetthefts.jpg' %}"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Internet Time Thefts</h5>
-                <p class="card-text">
-                  It refers to the theft in a manner where the unauthorized
-                  person uses internet hours paid by another person.
-                </p>
-                <br /><br /><br />
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-
-            <div class="card">
-              <img
-                src="{% static 'Tables/images/intellectual.png' %}"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Intellectual Property</h5>
-                <p class="card-text">
-                  Intellectual property refers to creations of the mind, such as
-                  inventions; literary and artistic works; designs; and symbols,
-                  names and images used in commerce.
-                </p>
-                <br /><br />
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
+          <div class="card">
+            <img src="{% static 'Tables/images/carding.png' %}" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Carding</h5>
+              <p class="card-text">
+                There is always unauthorized use of ATM cards in this type of
+                cyber crimes. It means false ATM cards i.e. Debit and Credit
+                cards used by criminals for their monetary benefits.
+              </p>
+              <a href="/crime_details" class="btn btn-primary">Read More</a>
             </div>
           </div>
-        </div>
 
-        <div class="carousel-item">
-          <div class="cards-wrapper">
-            <div class="card">
-              <img
-                src="{% static 'Tables/images/transmittingvirus.webp' %}"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Transmitting Virus</h5>
-                <p class="card-text">
-                  Viruses are programs that attach themselves to a computer or a
-                  file and then circulate themselves to other files and to other
-                  computers on a network. They usually affect the data on a
-                  computer, either by altering or deleting it.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
+          <div class="card">
+            <img src="{% static 'Tables/images/cheatingfraud.jpg' %}" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Cheating and Fraud</h5>
+              <p class="card-text">
+                It means the person who is doing the act of cyber crime i.e.
+                stealing password and data storage has done it with having
+                guilty mind which leads to fraud and cheating.
+              </p>
+              <br>
+              <a href="/crime_details" class="btn btn-primary">Read More</a>
             </div>
           </div>
         </div>
       </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleControls1"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleControls1"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-
-    <!-- Government -->
-    <h1 class="heading" id="govt_link">Government</h1>
-    <div
-      id="carouselExampleControls2"
-      class="carousel slide"
-      data-bs-ride="carousel"
-      data-bs-interval="false"
-    >
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="cards-wrapper">
-            <div class="card">
-              <img
-                src="{% static 'Tables/images/cyber_terrror.jpeg' %}"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Cyber Terrorism</h5>
-                <p class="card-text">
-                  Cyberterrorism is the use of the Internet to conduct violent
-                  acts that result in, or threaten, the loss of life or
-                  significant bodily harm, in order to achieve political or
-                  ideological gains through threat or intimidation.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-
-            <div class="card">
-              <img
-                src="{% static 'Tables/images/cyber_warfare.jpg' %}"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Cyber Warfare</h5>
-                <p class="card-text">
-                  Cyberwarfare is the use of cyber attacks against an enemy
-                  state, causing comparable harm to actual warfare and/or
-                  disrupting vital computer systems.
-                </p>
-                <br /><br />
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-
-            <div class="card">
-              <img
-                src="{% static 'Tables/images/software.jpg' %}"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Distribution of Pirated Software</h5>
-                <p class="card-text">
-                  Software Piracy is the illegal approach of copying,
-                  distributing, modifying, selling, or using the software which
-                  is legally protected.
-                </p>
-                <br /><br />
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
+      <div class="carousel-item">
+        <div class="cards-wrapper">
+          <div class="card">
+            <img src="{% static 'Tables/images/childpornography.jpg' %}" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Child Pornography</h5>
+              <p class="card-text">
+                It involves the use of computer networks to create,
+                distribute, or access materials that sexually exploit underage
+                children.
+              </p>
+              <br />
+              <br />
+              <a href="/crime_details" class="btn btn-primary">Read More</a>
             </div>
           </div>
-        </div>
 
-        <div class="carousel-item">
-          <div class="cards-wrapper">
-            <div class="card">
-              <img
-                src="{% static 'Tables/images/unauthorized.jpg' %}"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">
-                  Possession of Unauthorized Information
-                </h5>
-                <p class="card-text">
-                  It is very easy to access any information by the terrorists
-                  with the aid of internet and to possess that information for
-                  political, religious, social, ideological objectives.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
+          <div class="card">
+            <img src="{% static 'Tables/images/cracking.jpg' %}" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Cracking</h5>
+              <p class="card-text">
+                Cracking means that a stranger has broken into your computer
+                systems without your knowledge and consent and has tampered
+                with precious confidential data and information.
+              </p>
+              <a href="/crime_details" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="{% static 'Tables/images/cyberstalking.jpg' %}" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Cyber-Stalking</h5>
+              <p class="card-text">
+                It means to create physical threat that creates fear to use
+                the computer technology such as internet, e-mail, phones, text
+                messages, webcam, websites or videos
+              </p>
+              <br />
+              <a href="/crime_details" class="btn btn-primary">Read More</a>
             </div>
           </div>
         </div>
       </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleControls2"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleControls2"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
+      <div class="carousel-item">
+        <div class="cards-wrapper">
+          <div class="card">
+            <img src="{% static 'Tables/images/defamation.webp' %}" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Defamation</h5>
+              <p class="card-text">
+                Defamation is the act of communicating to a third party false
+                statements about a person, place or thing that results in
+                damage to its reputation
+              </p>
+              <a href="/crime_details" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+          <div class="card">
+            <img src="{% static 'Tables/images/dissemination.jpg' %}" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Dissemination Of Obscene Material</h5>
+              <p class="card-text">
+                It includes Indecent exposure/ Pornography, hosting of web
+                site containing these prohibited materials.
+              </p>
+              <a href="/crime_details" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="{% static 'Tables/images/emailspoofing.png' %}" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Email Spoofing</h5>
+              <p class="card-text">
+                A spoofed e-mail may be said to be one, which misrepresents
+                its origin. It shows itsorigin to be different from which
+                actually it originates.
+              </p>
+              <a href="/crime_details" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="cards-wrapper">
+          <div class="card">
+            <img src="{% static 'Tables/images/hacking.jpg' %}" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Hacking</h5>
+              <p class="card-text">
+                It means unauthorized control/access over computer system and
+                act of hacking completelydestroys the whole data as well as
+                computer programmes. Hackers usually hacks telecommunication
+                and mobile network.
+              </p>
+              <br>
+              <a href="/crime_details" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="{% static 'Tables/images/sms-spoofing.png' %}" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">SMS Spoofing</h5>
+              <p class="card-text">
+                Spoofing is a blocking through spam which means the unwanted
+                uninvited messages.Wrongdoer steals mobile phone number of any
+                person and sending SMS via internet and receiver gets the SMS
+                from the mobile phone number of the victim.
+              </p>
+              <a href="/crime_details" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- property -->
+  <h1 class="heading" id="prop_link">Property</h1>
+  <div id="carouselExampleControls1" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="cards-wrapper">
+          <div class="card">
+            <img src="{% static 'Tables/images/Cyber_squatting.jpg' %}" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Cyber Squatting</h5>
+              <p class="card-text">
+                Cybersquatting is the practice of registering, trafficking in,
+                or using an Internet domain name, with a bad faith intent to
+                profit from the goodwill of a trademark belonging to someone
+                else.
+              </p>
+              <br>
+              <a href="/crime_details" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="{% static 'Tables/images/cybertresspass.jpg' %}" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Cyber Trespass</h5>
+              <p class="card-text">
+                Cyber Trepass means to access someone's computer or network
+                without the right authorization of the owner and disturb,
+                alter, misuse, or damage data or system by using wireless
+                internet connection.
+              </p>
+              <br>
+              <a href="/crime_details" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="{% static 'Tables/images/cybervandalism.png' %}" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Cyber Vandalism</h5>
+              <p class="card-text">
+                Destructive cyberattacks without any obvious profit or
+                ideological motive. Cyber vandals can deface websites, disrupt
+                a company's services, or delete databases.
+              </p>
+              <br />
+              <br />
+              <a href="/crime_details" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="cards-wrapper">
+          <div class="card">
+            <img src="{% static 'Tables/images/hackingcomp.jpg' %}" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Hacking Computer System</h5>
+              <p class="card-text">
+                Hacking is the act of identifying and then exploiting
+                weaknesses in a computer system or network, usually to gain
+                unauthorized access to personal or organizational data.
+              </p>
+              <br>
+              <a href="/crime_details" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="{% static 'Tables/images/internetthefts.jpg' %}" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Internet Time Thefts</h5>
+              <p class="card-text">
+                It refers to the theft in a manner where the unauthorized
+                person uses internet hours paid by another person.
+              </p>
+              <br /><br /><br />
+              <a href="/crime_details" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="{% static 'Tables/images/intellectual.png' %}" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Intellectual Property</h5>
+              <p class="card-text">
+                Intellectual property refers to creations of the mind, such as
+                inventions; literary and artistic works; designs; and symbols,
+                names and images used in commerce.
+              </p>
+              <br /><br />
+              <a href="/crime_details" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="cards-wrapper">
+          <div class="card">
+            <img src="{% static 'Tables/images/transmittingvirus.webp' %}" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Transmitting Virus</h5>
+              <p class="card-text">
+                Viruses are programs that attach themselves to a computer or a
+                file and then circulate themselves to other files and to other
+                computers on a network. They usually affect the data on a
+                computer, either by altering or deleting it.
+              </p>
+              <a href="/crime_details" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Government -->
+  <h1 class="heading" id="govt_link">Government</h1>
+  <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="cards-wrapper">
+          <div class="card">
+            <img src="{% static 'Tables/images/cyber_terrror.jpeg' %}" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Cyber Terrorism</h5>
+              <p class="card-text">
+                Cyberterrorism is the use of the Internet to conduct violent
+                acts that result in, or threaten, the loss of life or
+                significant bodily harm, in order to achieve political or
+                ideological gains through threat or intimidation.
+              </p>
+              <a href="/crime_details" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="{% static 'Tables/images/cyber_warfare.jpg' %}" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Cyber Warfare</h5>
+              <p class="card-text">
+                Cyberwarfare is the use of cyber attacks against an enemy
+                state, causing comparable harm to actual warfare and/or
+                disrupting vital computer systems.
+              </p>
+              <br /><br />
+              <a href="/crime_details" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="{% static 'Tables/images/software.jpg' %}" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Distribution of Pirated Software</h5>
+              <p class="card-text">
+                Software Piracy is the illegal approach of copying,
+                distributing, modifying, selling, or using the software which
+                is legally protected.
+              </p>
+              <br /><br />
+              <a href="/crime_details" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="cards-wrapper">
+          <div class="card">
+            <img src="{% static 'Tables/images/unauthorized.jpg' %}" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">
+                Possession of Unauthorized Information
+              </h5>
+              <p class="card-text">
+                It is very easy to access any information by the terrorists
+                with the aid of internet and to possess that information for
+                political, religious, social, ideological objectives.
+              </p>
+              <a href="/crime_details" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
