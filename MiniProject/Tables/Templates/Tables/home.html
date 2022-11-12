@@ -1,7 +1,7 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head>*
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,60 +15,78 @@
 
   <body>
     <!-- navbar -->
+    <div class="container0">
+      <nav class="navbar navbar-expand-lg">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            
+          
+            <li class="nav-item dropdown nav-item-position">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                IPC Section
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
 
-    <nav class="navbar navbar-expand-lg">
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item nav-item-position">
-            <a
-              class="nav-link active text-white"
-              aria-current="page"
-              href="#person_link"
-              >Person</a
-            >
-          </li>
-          <li class="nav-item nav-item-position">
-            <a
-              class="nav-link active text-white"
-              aria-current="page"
-              href="#govt_link"
-              >Government</a
-            >
-          </li>
-          <li class="nav-item nav-item-position">
-            <a
-              class="nav-link active text-white"
-              aria-current="page"
-              href="#prop_link"
-              >Property</a
-            >
-          </li>
-          <li class="nav-item nav-item-position">
-            <a class="nav-link active text-white" aria-current="page" href="#"
-              >IPC Sections</a
-            >
-          </li>
-          <li class="nav-item nav-item-position">
-            <a class="nav-link active text-white" aria-current="page" href="#"
-              >IT Act</a
-            >
-          </li>
-        </ul>
-      </div>
-    </nav>
 
-    <!-- <header style="background-image: url('{% static 'Tables/images/homepage.jpeg' %}')"></header> -->
+            <li class="nav-item dropdown nav-item-position">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                IT Act
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item nav-item-position">
+              <a
+                class="nav-link active text-white"
+                aria-current="page"
+                href="#person_link"
+                >Person</a
+              >
+            </li>
+            <li class="nav-item nav-item-position">
+              <a
+                class="nav-link active text-white"
+                aria-current="page"
+                href="#govt_link"
+                >Government</a
+              >
+            </li>
+            <li class="nav-item nav-item-position">
+              <a
+                class="nav-link active text-white"
+                aria-current="page"
+                href="#prop_link"
+                >Property</a
+              >
+            </li>
+
+
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <header style="background-image: url('{% static 'Tables/images/homepageeee.png' %}')"></header>
 
     <!-- person -->
     <h1 class="heading" id="person_link">Person</h1>
@@ -89,6 +107,7 @@
               />
               <div class="card-body">
                 <h5 class="card-title">Assault By Threat</h5>
+                <br />
                 <p class="card-text">
                   refers to threatening a person with fear for their lives or
                   lives of their families through the use of a computer network
@@ -106,6 +125,7 @@
               />
               <div class="card-body">
                 <h5 class="card-title">Carding</h5>
+                <br />
                 <p class="card-text">
                   There is always unauthorized use of ATM cards in this type of
                   cyber crimes. It means false ATM cards i.e. Debit and Credit
@@ -123,6 +143,7 @@
               />
               <div class="card-body">
                 <h5 class="card-title">Cheating and Fraud</h5>
+                <br />
                 <p class="card-text">
                   It means the person who is doing the act of cyber crime i.e.
                   stealing password and data storage has done it with having
@@ -143,6 +164,7 @@
               />
               <div class="card-body">
                 <h5 class="card-title">Child Pornography</h5>
+                <br />
                 <p class="card-text">
                   It involves the use of computer networks to create,
                   distribute, or access materials that sexually exploit underage
@@ -162,6 +184,7 @@
               />
               <div class="card-body">
                 <h5 class="card-title">Cracking</h5>
+                <br />
                 <p class="card-text">
                   Cracking means that a stranger has broken into your computer
                   systems without your knowledge and consent and has tampered
@@ -179,6 +202,7 @@
               />
               <div class="card-body">
                 <h5 class="card-title">Cyber-Stalking</h5>
+                <br />
                 <p class="card-text">
                   It means to create physical threat that creates fear to use
                   the computer technology such as internet, e-mail, phones, text
@@ -200,6 +224,7 @@
               />
               <div class="card-body">
                 <h5 class="card-title">Defamation</h5>
+                <br />
                 <p class="card-text">
                   Defamation is the act of communicating to a third party false
                   statements about a person, place or thing that results in
@@ -217,6 +242,7 @@
               />
               <div class="card-body">
                 <h5 class="card-title">Dissemination Of Obscene Material</h5>
+                <br />
                 <p class="card-text">
                   It includes Indecent exposure/ Pornography, hosting of web
                   site containing these prohibited materials.
@@ -233,6 +259,7 @@
               />
               <div class="card-body">
                 <h5 class="card-title">Email Spoofing</h5>
+                <br />
                 <p class="card-text">
                   A spoofed e-mail may be said to be one, which misrepresents
                   its origin. It shows itsorigin to be different from which
@@ -254,6 +281,7 @@
               />
               <div class="card-body">
                 <h5 class="card-title">Hacking</h5>
+                <br />
                 <p class="card-text">
                   It means unauthorized control/access over computer system and
                   act of hacking completelydestroys the whole data as well as
@@ -272,6 +300,7 @@
               />
               <div class="card-body">
                 <h5 class="card-title">SMS Spoofing</h5>
+                <br />
                 <p class="card-text">
                   Spoofing is a blocking through spam which means the unwanted
                   uninvited messages.Wrongdoer steals mobile phone number of any
@@ -323,6 +352,7 @@
               />
               <div class="card-body">
                 <h5 class="card-title">Cyber Squatting</h5>
+                <br />
                 <p class="card-text">
                   Cybersquatting is the practice of registering, trafficking in,
                   or using an Internet domain name, with a bad faith intent to
@@ -342,6 +372,7 @@
               />
               <div class="card-body">
                 <h5 class="card-title">Cyber Trespass</h5>
+                <br />
                 <p class="card-text">
                   Cyber Trepass means to access someone's computer or network
                   without the right authorization of the owner and disturb,
@@ -360,6 +391,7 @@
               />
               <div class="card-body">
                 <h5 class="card-title">Cyber Vandalism</h5>
+                <br />
                 <p class="card-text">
                   Destructive cyberattacks without any obvious profit or
                   ideological motive. Cyber vandals can deface websites, disrupt
@@ -383,6 +415,7 @@
               />
               <div class="card-body">
                 <h5 class="card-title">Hacking Computer System</h5>
+                <br />
                 <p class="card-text">
                   Hacking is the act of identifying and then exploiting
                   weaknesses in a computer system or network, usually to gain
@@ -401,6 +434,7 @@
               />
               <div class="card-body">
                 <h5 class="card-title">Internet Time Thefts</h5>
+                <br />
                 <p class="card-text">
                   It refers to the theft in a manner where the unauthorized
                   person uses internet hours paid by another person.
@@ -418,6 +452,7 @@
               />
               <div class="card-body">
                 <h5 class="card-title">Intellectual Property</h5>
+                <br />
                 <p class="card-text">
                   Intellectual property refers to creations of the mind, such as
                   inventions; literary and artistic works; designs; and symbols,
@@ -440,6 +475,7 @@
               />
               <div class="card-body">
                 <h5 class="card-title">Transmitting Virus</h5>
+                <br />
                 <p class="card-text">
                   Viruses are programs that attach themselves to a computer or a
                   file and then circulate themselves to other files and to other
@@ -491,6 +527,7 @@
               />
               <div class="card-body">
                 <h5 class="card-title">Cyber Terrorism</h5>
+                <br />
                 <p class="card-text">
                   Cyberterrorism is the use of the Internet to conduct violent
                   acts that result in, or threaten, the loss of life or
@@ -509,6 +546,7 @@
               />
               <div class="card-body">
                 <h5 class="card-title">Cyber Warfare</h5>
+                <br />
                 <p class="card-text">
                   Cyberwarfare is the use of cyber attacks against an enemy
                   state, causing comparable harm to actual warfare and/or
@@ -527,6 +565,7 @@
               />
               <div class="card-body">
                 <h5 class="card-title">Distribution of Pirated Software</h5>
+                <br />
                 <p class="card-text">
                   Software Piracy is the illegal approach of copying,
                   distributing, modifying, selling, or using the software which
@@ -551,6 +590,7 @@
                 <h5 class="card-title">
                   Possession of Unauthorized Information
                 </h5>
+                <br />
                 <p class="card-text">
                   It is very easy to access any information by the terrorists
                   with the aid of internet and to possess that information for
@@ -582,6 +622,7 @@
       </button>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.js"></script>
   </body>
 </html>

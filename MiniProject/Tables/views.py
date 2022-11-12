@@ -12,6 +12,7 @@ def home(request):
 
     return render (request, 'Tables/home.html', {'person' : persons,    'government' : government, 'property' : property})
     
+def crime_desc(request):
+    return render (request)
 
-    
     
