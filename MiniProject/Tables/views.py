@@ -10,8 +10,12 @@ def home(request):
     government = Government_Related.objects.all()
     property = Property_Related.objects.all()
 
-    return render (request, 'Tables/home.html', {'person' : persons,    'government' : government, 'property' : property})
+    return render (request, 'Tables/home.html', {'person' : persons, 'government' : government, 'property' : property})
     
-
+def details(request,title):     
+    print(title)
+    t = Person_Related.objects.filter(pr_crime_title=title)
+    print(t)
+    return render(request, 'Tables/crime_details.html')
     
     
